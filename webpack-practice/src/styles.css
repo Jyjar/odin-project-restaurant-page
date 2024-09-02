@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: 'Baskervville';
+}
+
+button {
+    background: none;
+    box-sizing: border-box;
+    border-width: 0px 0px 3px 0px;
+    border-color: transparent;
+    border-style: solid;
+    color: white;
+    font-size: 22px;
+}
+
+#content {
+    flex: 1; /* Allow content to expand and fill available space */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+nav {
+    position: fixed;
+    top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+button:hover,
+button:active {
+    border-width: 0px 0px 3px 0px;
+    border-color: orange;
+    border-style: solid;
+}
+
+h1,
+h2,
+h3, 
+p {
+    color: white;
+}
+
+h2 {
+    font-size: 50px;
+    text-shadow: 2px 2px 4px black;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+h1 {
+    font-size: 120px;
+    font-weight: 500;
+}
+
+#welcomePText {
+    font-size: 40px;
+}
+
+#quotePText {
+    font-style: italic;
+    font-size: 30px;
+}
+
+#mainDishDiv,
+#beverageDiv {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+#mainDishDiv {
+    margin-top: 20px;
+}
+
+#meadImage,
+#steakImage {
+    display: flex;
+    width: 300px;
+    align-self: center;
+    border-radius: 15px;
+}
+
+#meadImage {
+    padding-bottom: 40px;
+}
+
+#aboutDiv {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 25px;
+    padding: 10px 30px 30px 30px
+}
+
+hr {
+    border-color: orange;
+    background-color: orange;
+}
+
+#aboutText {
+    font-size: 30px;
+}
+  
